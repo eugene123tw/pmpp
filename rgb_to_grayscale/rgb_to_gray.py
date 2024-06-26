@@ -28,7 +28,7 @@ def main():
     """
     ext = compile_extension()
 
-    x = read_image("rgb_to_grayscale/Grace_Hopper.jpg").permute(1, 2, 0).cuda()
+    x = read_image("Grace_Hopper.jpg").permute(1, 2, 0).cuda()
     print("mean:", x.float().mean())
     print("Input image:", x.shape, x.dtype)
 
